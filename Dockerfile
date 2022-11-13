@@ -8,5 +8,5 @@ WORKDIR /root
 USER root
 RUN mkdir Dogenano
 ADD https://raw.githubusercontent.com/MyEcoria/paw-node/main/config/config-rpc.toml Dogenano/
-ADD https://raw.githubusercontent.com/MyEcoria/paw-node/main/config/config-node.toml Dogenano/
-ENTRYPOINT paw_node --daemon --data_path=/root/Dogenano/
+ADD https://raw.githubusercontent.com/MyEcoria/dogenano-node/main/config-node.toml Dogenano/
+ENTRYPOINT doge_node --daemon --data_path=/root/Dogenano/
