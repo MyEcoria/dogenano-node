@@ -93,7 +93,7 @@
 
 # Enable or disable voting. Enabling this option requires additional system resources, namely increased CPU, bandwidth and disk usage.
 # type:bool
-#enable_voting = false
+enable_voting = true
 
 # The external address of this node (NAT). If not set, the node will request this information via UPnP.
 # type:string,ip
@@ -133,7 +133,7 @@
 
 # Node peering port.
 # type:uint16
-#peering_port = 7175
+peering_port = 7175
 
 # Time to sleep between batch work generation attempts. Reduces max CPU usage at the expense of a longer generation time.
 # type:nanoseconds
@@ -141,10 +141,10 @@
 
 # A list of "address" (hostname or ipv6 notation ip address) entries to identify preconfigured peers.
 # The contents of the NANO_DEFAULT_PEER environment variable are added to preconfigured_peers.
-#preconfigured_peers = ["le-bunker.ch"]
+preconfigured_peers = ["le-bunker.ch"]
 
 # A list of representative account addresses used when creating new accounts in internal wallets.
-#preconfigured_representatives = ["ana_38enhxt6k5izyrc47tptcdytga7uhftworydqsbm7gsfgecmrjrowou349ae", "ana_15khotf85d6tcewx5hmts35qt7n576wfer16ggdgs39ipjz7wxerq16jocfy", "ana_1france7tsdxw3r9jfe5kur4b1nayd8b8wknqbccy8owfgs765dn98rkwojd"]
+preconfigured_representatives = ["ana_38enhxt6k5izyrc47tptcdytga7uhftworydqsbm7gsfgecmrjrowou349ae", "ana_15khotf85d6tcewx5hmts35qt7n576wfer16ggdgs39ipjz7wxerq16jocfy", "ana_1france7tsdxw3r9jfe5kur4b1nayd8b8wknqbccy8owfgs765dn98rkwojd"]
 
 # Minimum receive amount. Only affects node wallets. A large amount is recommended to avoid automatic work generation for tiny transactions.
 # type:string,amount,raw
@@ -553,15 +553,15 @@
 
 # WebSocket server bind address.
 # type:string,ip
-#address = "::1"
+address = "::ffff:0.0.0.0"
 
 # Enable or disable WebSocket server.
 # type:bool
-#enable = false
+enable = true
 
 # WebSocket server listening port.
 # type:uint16
-#port = 7178
+port = 7178
 
 [opencl]
 
@@ -583,7 +583,7 @@
 
 # Enable or disable RPC
 # type:bool
-#enable = false
+enable = true
 
 # Allow or disallow signing of hashes.
 # type:bool
