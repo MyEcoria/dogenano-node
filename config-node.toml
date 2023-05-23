@@ -189,7 +189,7 @@ enable_voting = true
 #vote_minimum = "1000000000000000000000000000000000"
 
 # A list of "address:port" entries to identify work peers.
-work_peers = ["work.dogenano.io:80"]
+# work_peers = ["work.dogenano.io:80"]
 
 # Number of threads dedicated to CPU generated work. Defaults to all available CPU threads.
 # type:uint64
